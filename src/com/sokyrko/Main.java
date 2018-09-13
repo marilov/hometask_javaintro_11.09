@@ -37,6 +37,6 @@ public class Main {
                 max = numbers[i];
             }
         }
-        System.out.println("Наибольшее число в массиве: " + max);
+        System.out.println("\n" + "Наибольшее число в массиве: " + max);
     }
 }

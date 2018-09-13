@@ -33,7 +33,7 @@ public class Main {
         int max = numbers[0];
 
         for (i = 0; i < numbers.length; i++){
-            if (i > max){
+            if (numbers[i] > max){
                 max = numbers[i];
             }
         }

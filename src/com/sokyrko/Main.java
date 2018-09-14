@@ -22,6 +22,12 @@ public class Main {
         if(i>=numbers.length)
         System.out.println("Такого элемента нет в массиве");
 
+        for (i = 0; i < numbers.length; i++){
+            if (i < numbers.length && numbers[i] != 18){
+                System.out.println("18 " + "- "+ "Такого значения нет в массиве");
+            }
+        }
+
         // Задача 3
         for (i = 0; i < numbers.length; i++) {
             if(numbers[i]%2 == 0){
@@ -30,13 +36,25 @@ public class Main {
         }
 
         // Задача 4
-        int max = numbers[0];
+            int max = numbers[0];
 
-        for (i = 0; i < numbers.length; i++){
-            if (numbers[i] > max){
-                max = numbers[i];
+            for (i = 0; i < numbers.length; i++) {
+                if (numbers[i] > max) {
+                    max = numbers[i];
+                }
             }
+            System.out.println("\n" + "Наибольшее число в массиве: " + max);
+
+        // Задача 5
+        System.out.print("\nВывод элементов массива Numbers по порядку: ");
+        for (i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + ", ");
         }
-        System.out.println("\n" + "Наибольшее число в массиве: " + max);
+
+        // Задача 6
+        System.out.print("\nВывод элементов массива Numbers в обратном порядке: ");
+        for (int a = numbers.length - 1; a >= 0; a--) {
+            System.out.print(numbers[a] + ", ");
+        }
     }
 }
